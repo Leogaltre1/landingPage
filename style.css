@@ -17,8 +17,8 @@
 
 body {
     background: #f9f9f9;
-    min-height: 100vh;
-    overflow-x: hidden;
+    min-height: 100vh; /**/
+    overflow-x: hidden; /**/
 }
 
 header {
@@ -26,34 +26,37 @@ header {
     top: 0;
     left: 0;
     width: 100%;
- 
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 100; /**/
 }
 
-.logo {
-    top: 30px;
+.logo1 {
     font-size: 2em;
     color: #359381;
+    pointer-events: none; /**/
 }
 
-#navP {
+.menu a {
+    text-decoration: none; /**/
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600; /*Negritas*/
+}
+
+.menu a:hover,
+.menu a.active {
+    background: #359381;
+    color: #fff;
+}
+
+logo2 {
+    position: relative;
     display: flex;
-}
-
-#menu {
-    margin-right: 30px;
-}
-
-#divP {
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
-#img1 {
-    width: 5rem;
-    height: auto;
-}
-
