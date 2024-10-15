@@ -17,12 +17,13 @@
 
 body {
     background: #f9f9f9;
-    min-height: 100vh; /**/
-    /*overflow-x: hidden; /*No mostrar el scroll en x*/
+    min-height: 50vh; /**/
+    overflow-x: hidden; /*No mostrar el scroll en x*/
 }
 
 header {
-    position: absolute;
+    position: fixed; /* Cambia de absolute a fixed */
+    /*position: absolute;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -30,27 +31,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100; /**/
+    z-index: 100; /* Asegura que el header esté encima de otros elementos */
+    background: rgba(0, 0, 0, 0.2); /* Añade un fondo semitransparente para mejorar la visibilidad */
 }
 
 .logo1 {
     font-size: 2em;
-    color: #359381;
+    color: #fff;
     pointer-events: none; /**/
+    text-shadow: 2px 2px 4px rgba(0,0,0,2)
 }
 
 .menu a {
     text-decoration: none; /**/
-    color: #359381;
+    color: #fff;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600; /*Negritas*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,2)
 }
 
 .menu a:hover,
 .menu a.active {
-    background: #359381;
+    background: #e4007c;
     color: #fff;
 }
 
@@ -65,5 +69,28 @@ header {
 #text {
     position: absolute;
     font-size: 5em;
-    color: #333;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,2); /*Sombreado en el contorno*/
 }
+
+
+/*
+Colors 
+Rosa
+#e41c6c
+Rosa Mexicano
+#e4007c
+Verde
+#359381
+*/
+
+/*
+Color hex a rgb
+https://www.color-hex.com/color/359381
+Get color from an image
+https://pinetools.com/es/obtener-colores-imagen
+
+Manual de Identidad de Colores GOB Mex
+https://www.gob.mx/wikiguias/articulos/manual-de-identidad-grafica-2018-2024
+https://www.behance.net/gallery/88588219/Manual-de-Identidad-del-Gobierno-de-Mxico-2018-2024
+*/
